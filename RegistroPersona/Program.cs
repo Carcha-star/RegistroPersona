@@ -48,9 +48,25 @@ class Program()
         Agregar(nombre, apellidos, edad, sexo, pos);
 
     }
+
+    public static void Menu()
+    {
+        int op = 0, pos = 0;
+        do
+        {
+            Console.WriteLine("1. Agregar ");
+            Console.WriteLine("2. Mostrar");
+            Console.WriteLine("3. Eliminar ");
+            Console.WriteLine("4. Salir");
+            Console.WriteLine("Opcion");
+            op = int.Parse(Console.ReadLine());
+        } while (op != 4);
+    }
     public static void Main()
     {
+        Console.ForegroundColor = ConsoleColor.Blue;
 
+        Menu();
     }
 }
 
